@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.background{
+    background: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.about-content img{
+    height: 300px;
+    width: 227px;
+    border-radius: 10px;
+}
+
+.about-content{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    color: rgb(221, 221, 221);
+    align-items: center;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Ubuntu',sans-serif;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    text-decoration: none;
+}
+
+.btn-bg{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sub{
+    margin-left: 10px;
+}
+
+header{
+    width: 99%;
+    margin-top: -8px;
+    border-radius: 10px;
+    position: fixed;
+    transition: all .3s ease-out; 
+}
+
+.m-left{
+    margin-left: 15px;
+}
+
+.services-content{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.form-control{
+    height: 28px;
+    border-radius: 10px;
+    width: 45%;
+    padding: 3px 12px;
+    font-size: 15px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.page-services{
+    width: 100%;
+    text-align: center;
+}
+
+.text-family{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 18px;
+}
+
+.border-changer{
+    border-radius: 10px;
+}
+
+.bg-dark{
+    background-color: black;
+}
+
+.page-home{
+    color: white;
+    height: 740px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.content{
+    height: 300px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Ubuntu',sans-serif;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.inner-content img{
+    height: 65px;
+    width: 70px;
+    border-radius: 10%;
+    margin-left: 9px;
+}
+
+.inner-content{
+    display: flex;
+}
+.nav-image{
+    height: 54px;
+    width: 59px;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+.list-menu{
+    padding: 6px 14px;
+    font-weight: 600;
+}
+
+.nav-list{
+    width: 70%;
+}
+
+.search-list{
+    width: 30%;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.line{
+    height: 2px;
+    width: 16px;
+    background-color: white;
+}
+
+.btn-toggle{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 25px;
+    float: right;
+    display: none;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.page-contact{
+    text-align: center;
+}
+
+.contact-content{
+    text-align: center;
+}
+
+.bg-input{
+    width: 75%;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.btn-submit{
+    color: black !important;
+    border-color: black !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.text-bg{
+    font-size: 24px;
+}
+
+.me{
+    border: 2px solid black !important;
+}
+
+.l1{
+    margin-top: 3px;
+}
+
+.services-content1{
+    display: flex;
+    align-items: center;
+}
+
+.page-about{
+    text-align: center;
+}
+
+.m-right{
+    margin-right: 15px;
+    text-align: right;
+}
+
+
+@media screen and (max-width:920px) {
+    .services-content{
+        flex-direction: column;
+    }
+    .m-left,
+    .m-right{
+        text-align: center;
+    }
+    .services-content1{
+        flex-direction: column-reverse;
+    }
+    .navbar{
+        display: block;
+        text-align: center;
+        display: none;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    header{
+        height: 40px;
+        width: 94%;
+        margin-left: 19px;
+        border-radius: 4px;
+    }
+    ul{
+        display: block;
+    }
+    .nav-list{
+        width: 93%;
+    }
+    .search-list{
+        width: 100%;
+    }
+    .form-control{
+        width: 30%;
+        margin-left: 56px;
+    }
+    .btn-toggle{
+        display: block;
+    }
+    .nav-image{
+        margin-left: 21px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    header{
+        margin-left: 9px;
+    }
+}
+
+@media screen and (max-width:440px){
+    header{
+        margin-left: 3.8px;    
+    }
+    .nav-image{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .border-changer{
+        height: 200px;
+        width: 300px;
+    }
+    .nav-image{
+        margin-left: 56px;
+    }
+    header{
+        margin-left: 2.8px;
+    }
+    .form-control{
+        width: 45%;
+    }
+}
